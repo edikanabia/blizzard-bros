@@ -10,6 +10,11 @@ define newFade = Fade(0.3, 0.2, 0.3) #test
 
 #endregion user-defined transforms
 
+#region user-defined functions
+
+
+#endregion user-defined functions
+
 #region SFX
 
 #endregion SFX
