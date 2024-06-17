@@ -3,7 +3,7 @@
 
 define newFade = Fade(0.3, 0.2, 0.3) #test
 
-
+#screenshake effect
 init:
 
     python:
@@ -62,16 +62,60 @@ init:
         Shake = renpy.curry(_Shake)
     #
 
-#      
-
 define sshake = Shake((0,0,0,0),1.0, dist=15)
 #region user-defined transitions
 
 #endregion user-defined transitions
 
-#region user-defined transforms
+#region static transforms
+transform left_edge:
+    xalign 0.05
+    yalign 1.0
 
-#endregion user-defined transforms
+transform person_a:
+    xalign 0.15
+    yalign 1.0
+
+transform person_b:
+    xalign 0.3
+    yalign 1.0
+
+transform person_c:
+    xalign 0.5
+    yalign 1.0
+
+transform person_d:
+    xalign 0.7
+    yalign 1.0
+
+transform person_e:
+    xalign 0.82
+    yalign 1.0
+
+transform right_edge:
+    xalign 0.95
+    yalign 1.0
+
+#endregion static transforms
+
+#region motion transforms
+transform move_to_person_a:
+    linear 0.8 person_a
+
+transform move_to_person_b:
+    linear 0.8 person_b
+
+transform move_to_person_c:
+    linear 0.8 person_c
+
+transform move_to_person_d:
+    linear 0.8 person_d
+
+transform move_to_person_e:
+    linear 0.8 person_e
+
+
+#endregion motion transforms
 
 
 #region SFX
@@ -90,7 +134,14 @@ define fl = Character("Falo", image="falo")
 #endregion characters
 
 #region images
+image emmett = "images/emNeutral.png"
 image emmett neutral = "images/emNeutral.png"
+image emmett happy = "images/emHappy.png"
+image emmett thinking = "images/emThink.png"
+image emmett pensive = "images/emThoughtful.png"
+image emmett gentle = "images/emSmile.png"
+
+
 
 #endregion images
 

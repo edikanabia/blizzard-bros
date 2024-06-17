@@ -20,11 +20,13 @@ label start:
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    show emmett neutral
+    show emmett
 
     # These display lines of dialogue.
 
     e "You've created a new Ren'Py game."
+
+    show emmett happy at move_to_person_a
 
     e "Once you add a story, pictures, and music, you can release it to the world!"
 
