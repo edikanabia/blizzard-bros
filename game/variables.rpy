@@ -62,14 +62,33 @@ init:
         Shake = renpy.curry(_Shake)
     #
 
-define sshake = Shake((0,0,0,0),1.0, dist=15)
+define shake = Shake((0,0,0,0),1.0, dist=15)
+
+#region image and transition config variables
+
+define config.layers = ['master', 'background', 'character', 'cg', 'transient', 'screens', 'overlay']
+define config.tag_layer = {"bg":"background", "emmett":"character", "cg":"cg"}
+
+transform fade_to_alpha_fast(old_widget, new_widget):
+    old_widget
+    linear 0.15 alpha 0.0
+    new_widget
+    linear 0.15 alpha 1.0
+
+define config.say_attribute_transition = ComposeTransition(trans=dissolve, before=fade_to_alpha_fast)
+define config.say_attribute_transition_layer = "character"
+
+#endregion config variables
+
+
+
 #region user-defined transitions
 
 #endregion user-defined transitions
 
 #region static transforms
 transform left_edge:
-    xalign 0.05
+    align (0.05, 1.0)
     yalign 1.0
 
 transform person_a:
@@ -96,6 +115,8 @@ transform right_edge:
     xalign 0.95
     yalign 1.0
 
+
+
 #endregion static transforms
 
 #region motion transforms
@@ -113,6 +134,7 @@ transform move_to_person_d:
 
 transform move_to_person_e:
     linear 0.8 person_e
+
 
 
 #endregion motion transforms
@@ -134,6 +156,7 @@ define fl = Character("Falo", image="falo")
 #endregion characters
 
 #region images
+#characters
 image emmett = "images/emNeutral.png"
 image emmett neutral = "images/emNeutral.png"
 image emmett happy = "images/emHappy.png"
@@ -141,7 +164,10 @@ image emmett thinking = "images/emThink.png"
 image emmett pensive = "images/emThoughtful.png"
 image emmett gentle = "images/emSmile.png"
 
+#backgrounds
+image bg white = Solid("#fff")
 
+#CGs
 
 #endregion images
 
