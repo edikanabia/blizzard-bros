@@ -140,6 +140,9 @@ transform move_to_person_e:
 #endregion motion transforms
 
 
+
+#region Sound
+
 #region SFX
 
 #endregion SFX
@@ -147,6 +150,10 @@ transform move_to_person_e:
 #region music
 
 #endregion music
+
+#endregion Sound
+
+
 
 #region characters
 define em = Character("Emmett", image="emmett")
