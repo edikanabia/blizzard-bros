@@ -150,12 +150,13 @@ style namebox:
 
 style say_label:
     properties gui.text_properties("name", accent=True)
+    outlines [(0, "#14233A", 1, 1)]
     xalign gui.name_xalign
     yalign 0.5
 
 style say_dialogue:
     properties gui.text_properties("dialogue")
-
+    outlines [(0, "#14233A", 1, 1)]
     xpos gui.dialogue_xpos
     xsize gui.dialogue_width
     ypos gui.dialogue_ypos
