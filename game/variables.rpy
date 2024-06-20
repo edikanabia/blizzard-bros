@@ -143,6 +143,8 @@ transform move_to_person_e:
 
 #region Sound
 
+$ renpy.music.register_channel("ambience", "sfx", loop=True, tight=True, buffer_queue=True)
+
 #region SFX
 
 #endregion SFX
@@ -159,6 +161,7 @@ transform move_to_person_e:
 define em = Character("Emmett", image="emmett")
 define wb = Character("Werebeast")
 define fl = Character("Falo", image="falo")
+define narrator = Character(what_italic=True, color="#E7C275") #italics, specify color if so desired
 
 #endregion characters
 
