@@ -175,6 +175,7 @@ define em = Character("Emmett", image="emmett", ctc="ctc_indicator", ctc_positio
 define wb = Character("Werebeast", ctc="ctc_indicator", ctc_position="fixed")
 define fl = Character("Falo", image="falo", ctc="ctc_indicator", ctc_position="fixed")
 define narrator = Character(what_italic=True, what_color="#f3d491") #italics, specify color if so desired
+define nvlguy = Character(kind=nvl, what_color="#4d321f", what_outlines=[(0, None, 0, 0)]) #change font to handwritten font
 
 #endregion characters
 
