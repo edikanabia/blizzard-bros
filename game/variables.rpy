@@ -139,6 +139,14 @@ transform move_to_person_e:
 
 #endregion motion transforms
 
+#region ctcanim
+image ctc_indicator:
+    "gui/click_to_continue_indicator.png"
+    
+
+
+#endregion ctcanim
+
 
 
 #region Sound
@@ -158,7 +166,7 @@ $ renpy.music.register_channel("ambience", "sfx", loop=True, tight=True, buffer_
 
 
 #region characters
-define em = Character("Emmett", image="emmett")
+define em = Character("Emmett", image="emmett", ctc="gui/click_to_continue_indicator.png", ctc_position="fixed")
 define wb = Character("Werebeast")
 define fl = Character("Falo", image="falo")
 define narrator = Character(what_italic=True, color="#E7C275") #italics, specify color if so desired
