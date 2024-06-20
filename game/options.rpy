@@ -94,6 +94,8 @@ define config.after_load_transition = dissolve
 define config.end_game_transition = dissolve
 define config.enter_yesno_transition = dissolve
 define config.exit_yesno_transition = dissolve
+define config.nvl_adv_transition = dissolve
+define config.adv_nvl_transition = dissolve
 
 
 ## A variable to set the transition used when the game starts does not exist.

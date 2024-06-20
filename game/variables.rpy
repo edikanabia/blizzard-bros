@@ -120,6 +120,12 @@ transform right_edge:
 #endregion static transforms
 
 #region motion transforms
+transform move_to_offscreenleft:
+    linear 0.8 offscreenleft
+
+transform move_to_left_edge:
+    linear 0.8 left_edge
+
 transform move_to_person_a:
     linear 0.8 person_a
 
@@ -135,6 +141,12 @@ transform move_to_person_d:
 transform move_to_person_e:
     linear 0.8 person_e
 
+transform move_to_right_edge:
+    linear 0.8 right_edge
+
+transform move_to_offscreenright:
+    linear 0.8 offscreenright
+
 
 
 #endregion motion transforms
@@ -142,10 +154,13 @@ transform move_to_person_e:
 #region ctcanim
 image ctc_indicator:
     "gui/click_to_continue_indicator.png"
-    align (0.8, 0.925)
-    linear 0.8 alpha 0.3
-    ease 0.8 alpha 1.0
-    pause 0.2
+    align (0.79, 0.925)
+      
+    parallel:
+        ease_bounce 0.5 yalign 0.92
+        ease_bounce 0.5 yalign 0.925
+
+    
     repeat
     
 
@@ -174,7 +189,7 @@ $ renpy.music.register_channel("ambience", "sfx", loop=True, tight=True, buffer_
 define em = Character("Emmett", image="emmett", ctc="ctc_indicator", ctc_position="fixed")
 define wb = Character("Werebeast", ctc="ctc_indicator", ctc_position="fixed")
 define fl = Character("Falo", image="falo", ctc="ctc_indicator", ctc_position="fixed")
-define narrator = Character(what_italic=True, what_color="#f3d491") #italics, specify color if so desired
+define narrator = Character(what_font="LibreBaskerville-Italic.ttf", what_color="#f3d491", ctc="ctc_indicator", ctc_position="fixed") #italics, specify color if so desired
 define nvlguy = Character(kind=nvl, what_color="#4d321f", what_outlines=[(0, None, 0, 0)]) #change font to handwritten font
 
 #endregion characters

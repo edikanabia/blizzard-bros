@@ -1,4 +1,4 @@
-﻿################################################################################
+################################################################################
 ## Initialization
 ################################################################################
 
@@ -25,17 +25,17 @@ define config.check_conflicting_properties = True
 ## The colors of text in the interface.
 
 ## An accent color used throughout the interface to label and highlight text.
-define gui.accent_color = '#00cc99'
+define gui.accent_color = '#53c5a9'
 
 ## The color used for a text button when it is neither selected nor hovered.
-define gui.idle_color = '#888888'
+define gui.idle_color = '#c0daff6f'
 
 ## The small color is used for small text, which needs to be brighter/darker to
 ## achieve the same effect.
 define gui.idle_small_color = '#aaaaaa'
 
 ## The color that is used for buttons and bars that are hovered.
-define gui.hover_color = '#66e0c1'
+define gui.hover_color = '#61c3c5'
 
 ## The color used for a text button when it is selected but not focused. A
 ## button is selected if it is the current screen or preference value.
@@ -57,13 +57,13 @@ define gui.interface_text_color = '#ffffff'
 ## Fonts and Font Sizes ########################################################
 
 ## The font used for in-game text.
-define gui.text_font = "fonts/pala.ttf"
+define gui.text_font = "fonts/LibreBaskerville-Regular.ttf"
 
 ## The font used for character names.
-define gui.name_text_font = "fonts/palabi.ttf"
+define gui.name_text_font = "fonts/DMSerifDisplay-Italic.ttf"
 
 ## The font used for out-of-game text.
-define gui.interface_text_font = "fonts/pala.ttf"
+define gui.interface_text_font = "fonts/LibreBaskerville-Regular.ttf"
 
 ## The size of normal dialogue text.
 define gui.text_size = 33
@@ -106,12 +106,12 @@ define gui.textbox_yalign = 1.0
 
 ## The placement of the speaking character's name, relative to the textbox.
 ## These can be a whole number of pixels from the left or top, or 0.5 to center.
-define gui.name_xpos = 550
-define gui.name_ypos = -63
+define gui.name_xpos = 0.175
+define gui.name_ypos = -80
 
 ## The horizontal alignment of the character's name. This can be 0.0 for left-
 ## aligned, 0.5 for centered, and 1.0 for right-aligned.
-define gui.name_xalign = 0.5
+define gui.name_xalign = 0.0
 
 ## The width, height, and borders of the box containing the character's name, or
 ## None to automatically size it.
@@ -120,7 +120,7 @@ define gui.namebox_height = None
 
 ## The borders of the box containing the character's name, in left, top, right,
 ## bottom order.
-define gui.namebox_borders = Borders(100, 48, 100, 48)
+define gui.namebox_borders = Borders(45, 48, 45, 48)
 
 ## If True, the background of the namebox will be tiled, if False, the
 ## background of the namebox will be scaled.
