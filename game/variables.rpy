@@ -172,9 +172,9 @@ $ renpy.music.register_channel("ambience", "sfx", loop=True, tight=True, buffer_
 
 #region characters
 define em = Character("Emmett", image="emmett", ctc="ctc_indicator", ctc_position="fixed")
-define wb = Character("Werebeast")
-define fl = Character("Falo", image="falo")
-define narrator = Character(what_italic=True, color="#E7C275") #italics, specify color if so desired
+define wb = Character("Werebeast", ctc="ctc_indicator", ctc_position="fixed")
+define fl = Character("Falo", image="falo", ctc="ctc_indicator", ctc_position="fixed")
+define narrator = Character(what_italic=True, what_color="#f3d491") #italics, specify color if so desired
 
 #endregion characters
 
@@ -187,8 +187,14 @@ image emmett thinking = "images/emThink.png"
 image emmett pensive = "images/emThoughtful.png"
 image emmett gentle = "images/emSmile.png"
 
+image falo = "images/flNeutral.png"
+image falo neutral = "images/flNeutral.png"
+image falo happy = "images/flSmile.png"
+image falo thinking = "images/flThink.png"
+
 #backgrounds
 image bg white = Solid("#fff")
+image bg black = Solid("#000")
 
 #CGs
 
