@@ -1275,7 +1275,7 @@ screen notify(message):
 
     zorder 100
     style_prefix "notify"
-
+    on "show" action Play("sound", "audio/sfx/menu_notify.ogg")
     frame at notify_appear:
         text "[message!tq]"
 
@@ -1303,7 +1303,7 @@ style notify_frame:
 
 style notify_text:
     properties gui.text_properties("notify")
-    activate_sound "audio/sfx/menu_notify.ogg"
+
 
 
 ## NVL screen ##################################################################

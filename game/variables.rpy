@@ -64,6 +64,16 @@ init:
 
 define shake = Shake((0,0,0,0),1.0, dist=15)
 
+#beep voice character callback
+init python:
+    def beep_voice(event, interact=True, **kwargs):
+        if not interact:
+            return
+        if event == "show":
+            renpy.sound.play("audio/sfx/voice_beep.ogg", "sound", loop=True)
+        elif event=="show_done" or event == "end":
+            renpy.sound.stop("sound")
+
 #region image and transition config variables
 
 define config.layers = ['master', 'background', 'character', 'cg', 'transient', 'screens', 'overlay']
@@ -185,6 +195,8 @@ define audio.paper = "audio/sfx/paper.ogg"
 define audio.knock = "audio/sfx/slow_knock.ogg"
 define audio.panic_knock = "audio/sfx/panicked_knock.ogg"
 
+
+
 #endregion SFX oneshots
 
 #region SFX ambience
@@ -204,10 +216,10 @@ define audio.noise = "audio/sfx/ambience_noise.ogg"
 
 
 #region characters
-define em = Character("Emmett", image="emmett", ctc="ctc_indicator", ctc_position="fixed")
-define wb = Character("Werebeast", ctc="ctc_indicator", ctc_position="fixed")
-define fl = Character("Falo", image="falo", ctc="ctc_indicator", ctc_position="fixed")
-define narrator = Character(what_font="LibreBaskerville-Italic.ttf", what_color="#f3d491", ctc="ctc_indicator", ctc_position="fixed") 
+define em = Character("Emmett", image="emmett", ctc="ctc_indicator", ctc_position="fixed", callback=beep_voice)
+define wb = Character("Werebeast", ctc="ctc_indicator", ctc_position="fixed", callback=beep_voice)
+define fl = Character("Falo", image="falo", ctc="ctc_indicator", ctc_position="fixed", callback=beep_voice)
+define narrator = Character(what_font="LibreBaskerville-Italic.ttf", what_color="#f3d491", ctc="ctc_indicator", ctc_position="fixed", callback=beep_voice) 
 define journal = Character(kind=nvl_narrator, what_color="#362c1f", what_outlines=[(0, None, 0, 0)], what_font="fonts/blzee.ttf")
 
 #endregion characters
