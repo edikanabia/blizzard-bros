@@ -64,7 +64,7 @@ label scene_four:
     em "So let’s say that you did eat all of those people-"
     "He quickly turns to me."
     wb "I did."
-    em "No you did not. There are no hidden bodies stored anywhere within this mansion.
+    em "No you did not. There are no hidden bodies stored anywhere within this mansion."
     em "I’ve swept it from top to bottom, gathering firewood. You think it just appeared out of thin air?"
     em "And you haven’t eaten me yet, and you won’t."
     wb "…"
