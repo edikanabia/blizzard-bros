@@ -45,8 +45,45 @@ label scene_two:
     "Well, it looks like he has a lot of explaining to do tomorrow!"
     return
 
+# fourth scene (Stara.rpy has third scene)
+label scene_four:
+    "I must have scraped this mansion from top to bottom, and there are barely any scraps of wood left for kindling."
+    "That’s strange… I could have sworn that there would have been more bones laying around based on our talk this morning…"
+    "There are less corpses than the names of people who were cursed…"
+    "And comparing the dates of the letters up to now, the werebeast would have starved to death- but he didn’t!"
+    "He is not trapped here, as I am able to come and go as I please- he can too."
+    # scene transition
+    "I walk back into the basement, with less kindling this time. The Werebeast is staring at the flames with his back to me."
+    wb "Have you ever taken something back that was stolen from you?"
+    em "Well, I did find out that some of my tools were stolen the other day."
+    em "But then I realized that whomever took them probably needed them a lot more than I did at that moment."
+    em "I was able to buy some new ones at a little shop one town over from here."
+    "The Werebeast is silent, only the sounds of the wood crackling in the fire can be heard."
+    wb "It feels like before I even took this form I had to find a way to survive."
+    wb "…I wish I did not have to eat them."
+    em "So let’s say that you did eat all of those people-"
+    "He quickly turns to me."
+    wb "I did."
+    em "No you did not. There are no hidden bodies stored anywhere within this mansion.
+    em "I’ve swept it from top to bottom, gathering firewood. You think it just appeared out of thin air?"
+    em "And you haven’t eaten me yet, and you won’t."
+    wb "…"
+    wb "But I cursed all of them… and who’s to say that I won’t do that to you too."
+    em "You haven’t done that yet either."
+    em "You can’t change the past, but you can come with me."
+    wb "And do what? I'd better use as the last piece of furniture in this mansion."
+    em "Come with me anyways."
+    wb "I-"
+    em "You can’t just sit here and wallow for all eternity about what you should have done." 
+    em "That was your old life, and there’s nothing you can do to change it."
+    em "There’s no one here to stop you. It would be like starting over."
+    "I set the firewood down and start to put the tools back in my bag."
+    em "I’ll let you think about it. Once the blizzard dies down, I’ll be leaving. You’re welcome to join me."
+    "I leave the Werebeast alone in the basement, as the flames reduce to a simmer."
+    return
+
 # final scene
-label scene_three:
+label scene_final:
 
     "Morning rises once more, and blessedly, I still haven’t succumbed to the cold. Better yet…"
     em "…It’s quiet."
