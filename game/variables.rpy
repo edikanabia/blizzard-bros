@@ -69,10 +69,9 @@ init python:
     def beep_voice(event, interact=True, **kwargs):
         if not interact:
             return
-        if event == "show":
-            renpy.sound.play("audio/sfx/voice_beep.ogg", "sound", loop=True)
-        elif event=="show_done" or event == "end":
-            renpy.sound.stop("sound")
+        if event == "slow_done":
+            renpy.sound.play("audio/sfx/menu_ctc.ogg", "sound", loop=False)
+
 
 #region image and transition config variables
 
