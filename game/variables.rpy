@@ -189,8 +189,8 @@ $ renpy.music.register_channel("ambience", "sfx", loop=True, tight=True, buffer_
 define em = Character("Emmett", image="emmett", ctc="ctc_indicator", ctc_position="fixed")
 define wb = Character("Werebeast", ctc="ctc_indicator", ctc_position="fixed")
 define fl = Character("Falo", image="falo", ctc="ctc_indicator", ctc_position="fixed")
-define narrator = Character(what_font="LibreBaskerville-Italic.ttf", what_color="#f3d491", ctc="ctc_indicator", ctc_position="fixed") #italics, specify color if so desired
-define nvlguy = Character(kind=nvl, what_color="#4d321f", what_outlines=[(0, None, 0, 0)]) #change font to handwritten font
+define narrator = Character(what_font="LibreBaskerville-Italic.ttf", what_color="#f3d491", ctc="ctc_indicator", ctc_position="fixed") 
+define journal = Character(kind=nvl_narrator, what_color="#362c1f", what_outlines=[(0, None, 0, 0)], what_font="fonts/blzee.ttf")
 
 #endregion characters
 
