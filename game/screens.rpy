@@ -27,6 +27,8 @@ style gui_text:
 
 style button:
     properties gui.button_properties("button")
+    activate_sound "audio/sfx/menu_click.ogg"
+    hover_sound "audio/sfx/menu_tick.ogg"
 
 style button_text is gui_text:
     properties gui.text_properties("button")
@@ -637,6 +639,7 @@ screen file_slots(title):
 
                     button:
                         action FileAction(slot)
+                        
 
                         has vbox
 
@@ -649,6 +652,7 @@ screen file_slots(title):
                             style "slot_name_text"
 
                         key "save_delete" action FileDelete(slot)
+                        
 
             ## Buttons to access other pages.
             vbox:
@@ -1151,10 +1155,11 @@ screen confirm(message, yes_action, no_action):
 
     style_prefix "confirm"
 
-    add "gui/overlay/confirm.png"
+    on "show" action Play("sound","audio/sfx/menu_confirm.ogg")
+    add "gui/overlay/confirm.png" 
 
     frame:
-
+        
         vbox:
             xalign .5
             yalign .5
@@ -1168,8 +1173,13 @@ screen confirm(message, yes_action, no_action):
                 xalign 0.5
                 spacing 150
 
-                textbutton _("Yes") action yes_action
-                textbutton _("No") action no_action
+                textbutton _("Yes"):
+                    activate_sound "audio/sfx/menu_select.ogg"
+                    action yes_action
+                textbutton _("No"):
+                    activate_sound "audio/sfx/menu_cancel.ogg" 
+                    action no_action
+    
 
     ## Right-click and escape answer "no".
     key "game_menu" action no_action
@@ -1273,9 +1283,11 @@ screen notify(message):
 
 
 transform notify_appear:
+    
     on show:
         alpha 0
         linear .25 alpha 1.0
+
     on hide:
         linear .5 alpha 0.0
 
@@ -1291,6 +1303,7 @@ style notify_frame:
 
 style notify_text:
     properties gui.text_properties("notify")
+    activate_sound "audio/sfx/menu_notify.ogg"
 
 
 ## NVL screen ##################################################################

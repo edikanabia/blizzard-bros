@@ -7,7 +7,7 @@ define newFade = Fade(0.3, 0.2, 0.3) #test
 init:
 
     python:
-    
+        
         import math
 
         class Shaker(object):
@@ -173,9 +173,27 @@ image ctc_indicator:
 
 $ renpy.music.register_channel("ambience", "sfx", loop=True, tight=True, buffer_queue=True)
 
-#region SFX
+#region SFX oneshots
+define audio.growl = "audio/sfx/beast_growl.ogg"
+define audio.blanket = "audio/sfx/blanket.ogg"
+define audio.creak = "audio/sfx/door_creak.ogg"
+define audio.door_open = "audio/sfx/door_open.ogg"
+define audio.door_shut = "audio/sfx/door_shut.ogg"
+define audio.walk = "audio/sfx/footsteps_slow(reverb).ogg"
+define audio.monster = "audio/sfx/ominous_shuffling.ogg"
+define audio.paper = "audio/sfx/paper.ogg"
+define audio.knock = "audio/sfx/slow_knock.ogg"
+define audio.panic_knock = "audio/sfx/panicked_knock.ogg"
 
-#endregion SFX
+#endregion SFX oneshots
+
+#region SFX ambience
+define audio.fireplace = "audio/sfx/ambience_fireplace.ogg"
+define audio.wind = "audio/sfx/wind.ogg"
+define audio.noise = "audio/sfx/ambience_noise.ogg"
+
+#endregion SFX ambience
+
 
 #region music
 
