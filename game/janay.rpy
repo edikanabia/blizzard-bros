@@ -1,20 +1,20 @@
 # second scene
 label scene_two:
-    
-    
-    # “Hopefully this will not be the last time I am able to write. I am done working for this family. I did not come to this conclusion lightly, as I have worked for them for Lord knows how long. Frankly, I regret not leaving when the child was infected… but I stayed out of loyalty to him, as I had seen him grow up. Probably a bit naive in hindsight. I stayed and tried to help but instead watched everyone turn. You can’t even call this a plague, this is- something else.”
-
+    "I settle down next to a fireplace, using magic to light up the logs for light."
+    "I start to read over the documents I've gathered around the mansion."
+    "This one looks like a journal entry!"
+    "Maybe I'll be lucky and this can give some insight to what happened here..."
+    journal "Hopefully this will not be the last time I am able to write. I am done working for this family. I did not come to this conclusion lightly, as I have worked for them for Lord knows how long. Frankly, I regret not leaving when the child was infected… but I stayed out of loyalty to him, as I had seen him grow up. Probably a bit naive in hindsight. I stayed and tried to help but instead watched everyone turn. You can’t even call this a plague, this is- something else."
     "Hm, it seems like a curse went around this mansion. But what was the cause of it?"
-    # Emmett switches over to read a list of names, hastily scribbled on a sheet of paper. They are each labeled with the different rooms in the house. 
+    "Maybe this list of names and room numbers are the people who were affected by this magic." 
     "So it wasn’t just the family but it looks like the mansion staff were cursed too…"
-    "When word got out that the child turned, about half of the staff dropped overnight. The kitchen was a mess. My comrades wrapped any food that they could carry on their backs in spare linens from the washroom-"
-    # The bottom of the entry has been eaten by moths, lost to time.
+    journal "When word got out that the child turned, about half of the staff dropped overnight. The kitchen was a mess. My comrades wrapped any food that they could carry on their backs in spare linens from the washroom-"
+    "The bottom of the entry has been eaten by moths, lost to time."
     "I was right! They did look like they left in a hurry. But there’s still a lot that’s not fitting here."
-    # Emmett looks at another letter he found which was near the front door of the mansion. He cracks open the wax seal and unfolds it.
-    "Leave now. There was a reason why those who turned were left behind."
+    "I look at another letter I found earlier, which was near the front door of the mansion. I crack open the wax seal and unfold it."
+    journal "Leave now. There was a reason why those who turned were left behind."
     "…he was abandoned?"
-    # he notes that the cursed were “hidden away” into the basement he was just in, and that there were several skeletons and corpses littered around the prisons. the only one that is still alive is the werebeast that he had just treated. 
-    # Emmett looks over at the werebeast sound asleep in the corner.
+    "I look over at the werebeast sound asleep in the corner."
     "Well, it looks like he has a lot of explaining to do tomorrow!"
     return
 
