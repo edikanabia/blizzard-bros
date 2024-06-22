@@ -60,6 +60,7 @@ label scene_three:
     "I’m still good on supplies for another day or so, so my only hope is that the blizzard subsides by then."
     "For now, I suppose there’s not much else to do besides check on the werebeast. He should be fine, but there’s much I would like to ask him."
     # fade to black for scene transition, door creak sfx
+    # CG3 appears
     em "Good morning. Would you care to join me for breakfast?"
     "The werebeast stirs, and turns to look at me."
     wb "You’re persistent."
@@ -127,14 +128,17 @@ label scene_three:
 # final scene
 label scene_final:
 
+    # fireplace day bg
     "Morning rises once more, and blessedly, I still haven’t succumbed to the cold. Better yet…"
     em "…It’s quiet."
     "Indeed, the fireplace is reduced to dying embers. The house no longer groans against the force of the wind. In fact, there is no howling wind at all."
     # Clear window BG
     "A look out the window ties it all together."
     "With the blizzard gone, my van is in clear view. A little buried, but nothing a little menial labor and fire magic couldn’t fix."
+    # transition back to fireplace day bg
     em "Before that, I should prepare breakfast."
     em "Now, where did I put my kettle…"
+    # door creak sfx
     "The door to the cellar creaks open behind me. I turn to look—"
     "—and I see a haggard individual with overgrown hair and a tattered cloak, threadbare from the stresses of transforming. They hold out my kettle in their bandaged hand, and the heated blanket over their forearm."
     wb "You forgot these."
