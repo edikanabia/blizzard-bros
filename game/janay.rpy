@@ -1,31 +1,3 @@
-# opening scene
-label scene_one:
-
-    em "Are you ready? This will hurt for a moment, but the relief will come after."
-    wb "Rrggh—! Khhhh…"
-    em "Easy, easy… Again, this is still just warm water, but given your body temperature…"
-    em "This will melt the ice formations, but the wounds they were causing will open up when they do."
-    "The strange werebeast growls lowly. His teeth glint in the light of my lantern. I pay little mind as I continue talking through my work." 
-    em "I’ll be dressing the wounds now. Your body temperature means blood will not flow as freely…" 
-    em "which is the opposite of what we want, given we want the healing process to go by as quickly as possible." 
-    em "As such, I’ll prepare these dressings to provide some warmth to the areas, amongst other things to promote healing."
-    "It’s quick, simple work. I almost find it meditative."
-    "I hadn’t noticed when he stopped growling at me, but when I do, I notice that he has been watching me as well. With curiosity, caution, or some other underlying emotion, I couldn’t tell."
-    "Either way, I pretend that I don’t see him watching me. The moment I move to look up at him, he then quickly looks away—which is just about the reaction I expected." 
-    "He doesn’t seem skittish; just guarded. I try to give him a warm smile, though this prompts no reaction."
-    em "There, we’re finished. And here, you can use this. The magic on this should last for quite a long time."
-    "I drape a heated blanket over him— however"
-    em "Now, would you care to join me for dinner? It’s not much, but it should suffice for a meal."
-    wb "…"
-    em "Come now, weren’t you just threatening to eat me earlier? Surely you’re starving. I have enough for the both of us."
-    "The werebeast cranes his head and watches me open up some containers from my bag."
-    wb "…Ice cubes, Good Doctor?"
-    em "Concentrated soup, it keeps well in this weather. Now, would you like to join me?"
-    "I melt down more fresh snow in the kettle. The werebeast seems interested as I use magic to heat it up."
-    wb "What are you using as a conduit? Yourself?"
-    em "Ah— the gloves, actually. It’s quite the rage these days. The material is like leather, but made to handle the duress of casting magic."
-    return
-
 # second scene
 label scene_two:
     
@@ -62,7 +34,7 @@ label scene_four:
     wb "It feels like before I even took this form I had to find a way to survive."
     wb "…I wish I did not have to eat them."
     em "So let’s say that you did eat all of those people-"
-    "He quickly turns to me."
+    "He quickly turns to me, head craining at an almost unnatural angle."
     wb "I did."
     em "No you did not. There are no hidden bodies stored anywhere within this mansion."
     em "I’ve swept it from top to bottom, gathering firewood. You think it just appeared out of thin air?"
@@ -82,38 +54,3 @@ label scene_four:
     "I leave the Werebeast alone in the basement, as the flames reduce to a simmer."
     return
 
-# final scene
-label scene_final:
-
-    "Morning rises once more, and blessedly, I still haven’t succumbed to the cold. Better yet…"
-    em "…It’s quiet."
-    "Indeed, the fireplace is reduced to dying embers. The house no longer groans against the force of the wind. In fact, there is no howling wind at all."
-    # CG of window view
-    "A look out the window ties it all together."
-    "With the blizzard gone, my van is in clear view. A little buried, but nothing a little menial labor and fire magic couldn’t fix."
-    em "Before that, I should prepare breakfast."
-    em "Now, where did I put my kettle…"
-    "The door to the cellar creaks open behind me. I turn to look—"
-    "—and I see a haggard individual with overgrown hair and a tattered cloak, threadbare from the stresses of transforming. They hold out my kettle in their bandaged hand, and the heated blanket over their forearm."
-    wb "You forgot these."
-    em "Ah! Thank you. You can keep the blanket, though. You’ll need it more than I do."
-    wb "About that…"
-    wb "I made up my mind. You said you wouldn’t mind an extra traveling companion, right?"
-    wb "I’ll be joining you. I hope you didn’t plan on turning back on your offer."
-    em "Of course not. I was hoping you would accept, actually."
-    "I prepare breakfast for the both of us, and I thank the heavens once more that the blizzard had subsided—these were the last meal packs I had on hand."
-    em "There’s a shower installed inside the van—you’re free to use it once we clear the van of snow. We’ll then make our way back towards the nearest town, if that’s alright."
-    wb "No one will know who I am over there, it’s fine."
-    wb "If you need some extra money, I kept a secret stash in my room. I had it in case I found the chance to escape from this place, so…"
-    wb "I guess now’s a good time to dip into it."
-    em "Well… How about we go to a barbershop once we’re in town? A change in appearance might be refreshing."
-    wb "I’d like that."
-    "He cracks a weary, faint smile."
-    wb "By the way, you never told me your name."
-    em "Ah, of course. My name is Emmett. You never told me yours, either."
-    fl "Falo."
-    fl "I always liked the name, so you can call me that."
-    em "Well met, Falo."
-    return
-
-# end game
