@@ -1,6 +1,7 @@
 # second scene
 label scene_two:
     
+    
     # “Hopefully this will not be the last time I am able to write. I am done working for this family. I did not come to this conclusion lightly, as I have worked for them for Lord knows how long. Frankly, I regret not leaving when the child was infected… but I stayed out of loyalty to him, as I had seen him grow up. Probably a bit naive in hindsight. I stayed and tried to help but instead watched everyone turn. You can’t even call this a plague, this is- something else.”
 
     "Hm, it seems like a curse went around this mansion. But what was the cause of it?"

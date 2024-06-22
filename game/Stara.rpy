@@ -1,11 +1,13 @@
 # opening scene
 label scene_one:
 
+    # screen starts out black here, no emotes are used
     em "Are you ready? This will hurt for a moment, but the relief will come after."
     wb "Rrggh—! Khhhh…"
     em "Easy, easy… Again, this is still just warm water, but given your body temperature…"
     em "This will melt the ice formations, but the wounds they were causing will open up when they do."
     "The strange werebeast growls lowly. His teeth glint in the light of my lantern. I pay little mind as I continue talking through my work." 
+    # CG1 appears here
     em "I’ll be dressing the wounds now. Your body temperature means blood will not flow as freely…" 
     em "which is the opposite of what we want, given we want the healing process to go by as quickly as possible." 
     em "As such, I’ll prepare these dressings to provide some warmth to the areas, amongst other things to promote healing."
@@ -22,10 +24,11 @@ label scene_one:
     wb "…Ice cubes, Good Doctor?"
     em "Concentrated soup, it keeps well in this weather. Now, would you like to join me?"
     "I melt down more fresh snow in the kettle. The werebeast seems interested as I use magic to heat it up."
+    # CG2 appears here
     wb "What are you using as a conduit? Yourself?"
     em "Ah— the gloves, actually. It’s quite the rage these days. The material is like leather, but made to handle the duress of casting magic."
     wb "...Hm."
-    "The werebeast takes a hold of one of my hands, inspecting the glove. I nearly drop the kettle in surprise, but I dont resist or pull back. There’s a certain interest to his gaze that I can’t discern, but at the very least, I can tell he means no harm."
+    "The werebeast takes a hold of one of my hands, inspecting the glove. I nearly drop the kettle in surprise, but I don’t resist or pull back. There’s a certain interest to his gaze that I can’t discern, but at the very least, I can tell he means no harm."
     "However, he only looks for a short moment before he lets go."
     wb "...Never mind. You can still sense traces of magic from it."
     em "Ah? What do you mean?"
@@ -44,17 +47,19 @@ label scene_one:
     "The werebeast makes no indication that he heard me, but I assume he did anyway."
     em "Have a good night."
     "I make my way back up the stairs, and out of the basement. It shouldn’t take long to find a fireplace, or at least I hope so."
+    #fade to black transition
     return
 
 #scene three
 label scene_three:
 
+    #Fireplace Day BG
     "Biting cold is the first thing I feel when I wake up. Unsurprisingly, the fire died down overnight. I rub my face, clearing the bleariness from my eyes. It is only then I see the documents strewn about around me."
     "Not an unfamiliar situation to wake up to, but the location certainly is unique."
     "The blizzard still rages on, I can tell that much from the window. Not much else to discern. I can barely see my van through the haze."
     "I’m still good on supplies for another day or so, so my only hope is that the blizzard subsides by then."
     "For now, I suppose there’s not much else to do besides check on the werebeast. He should be fine, but there’s much I would like to ask him."
-    # [scene transition]
+    # fade to black for scene transition, door creak sfx
     em "Good morning. Would you care to join me for breakfast?"
     "The werebeast stirs, and turns to look at me."
     wb "You’re persistent."
@@ -125,7 +130,7 @@ label scene_final:
     "Morning rises once more, and blessedly, I still haven’t succumbed to the cold. Better yet…"
     em "…It’s quiet."
     "Indeed, the fireplace is reduced to dying embers. The house no longer groans against the force of the wind. In fact, there is no howling wind at all."
-    # CG of window view
+    # Clear window BG
     "A look out the window ties it all together."
     "With the blizzard gone, my van is in clear view. A little buried, but nothing a little menial labor and fire magic couldn’t fix."
     em "Before that, I should prepare breakfast."
