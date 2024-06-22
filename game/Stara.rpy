@@ -21,7 +21,7 @@ label scene_three:
     wb "Does that satisfy your question?"
     em "Not exactly. Mind elaborating?"
     wb "We realized pretty quickly that the estate was abandoned when no one came down to feed us. We couldn’t escape either, since the magic keeping the prisons locked was still pretty strong."
-    wb "So everyone started getting worried about how they were going to survive. You should have seen how quick they were willing to turn to cannibalism. It was disgusting.
+    wb "So everyone started getting worried about how they were going to survive. You should have seen how quick they were willing to turn to cannibalism. It was disgusting."
     wb "Anyway, I ate all of them. It’s not like I wasn’t getting hungry myself. I couldn’t stand another minute with any of them, and I didn’t want them to stick around long enough that I started to pity them."
     em "You speak about them with contempt. You must despise these people."
     wb "Hah. That’s an understatement."
@@ -54,7 +54,7 @@ label scene_three:
     wb "As horrid of a life mine has been, my actions aren’t completely excusable. There’s no better fate for me than to rot in this cell."
     wb "It’s not like I have anywhere else to go, nor do I have any aspirations that are feasible for me."
     wb "I have nothing here. I have less out there."
-    "The werebeast pours himself another cup of tea. The thought leaves my mouth faster than I can think on it.
+    "The werebeast pours himself another cup of tea. The thought leaves my mouth faster than I can think on it."
     em "Why not come travel with me?"
     "As impulsive as the offer was, it was one I was welcoming of. For the first time during this stay, the Werebeast is astonished, and it takes him a moment to respond."
     wb "What?"
