@@ -1,1 +1,9 @@
-this document exists to preserve the file hierarchy.
+Song names "legend"
+
+1) Haunting - It's um, plays, to establish atmosphere.
+2) Meeting - When the player find out the beast can talk...?
+3) Emmett - just a man's theme
+4) Escape (or "Let's Get Out of Here") - an upbeat theme synthesizing both motifs. Supposed to come in instrumental and vocal (the vocals are gibberish).
+
+intro - meant to be played once
+loop - meant to be queued after intro
