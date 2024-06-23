@@ -195,6 +195,11 @@ label scene_final:
     show emmett happy
     em "Well met, Falo."
     em "Now, would you like to join me for breakfast?"
+    hide falo
+    hide emmett
+    scene bg black
+    with dissolve
+    "END"
     return
 
 # end game
