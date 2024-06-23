@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("blizzard bros")
+define config.name = _("Heart of the Blizzard")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -23,15 +23,13 @@ define gui.show_name = False
 
 ## The version of the game.
 
-define config.version = "1.0"
+define config.version = "1.1"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p(""" A game by Stara, Dusty, and Janay. Or something. You know how it is
-
-Made with Ren'Py 8.2.1
 """)
 
 
@@ -39,7 +37,7 @@ Made with Ren'Py 8.2.1
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "blizzardbros"
+define build.name = "heart-of-the-blizzard"
 
 
 ## Sounds and music ############################################################
@@ -50,7 +48,7 @@ define build.name = "blizzardbros"
 
 define config.has_sound = True
 define config.has_music = True
-define config.has_voice = True
+define config.has_voice = False
 
 
 ## To allow the user to play a test sound on the sound or voice channel,
