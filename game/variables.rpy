@@ -76,7 +76,7 @@ init python:
 #region image and transition config variables
 
 define config.layers = ['master', 'background', 'character', 'cg', 'transient', 'screens', 'overlay']
-define config.tag_layer = {"bg":"background", "emmett":"character", "cg":"cg"}
+define config.tag_layer = {"bg":"background", "emmett":"character", "falo":"character", "cg":"cg"}
 
 transform fade_to_alpha_fast(old_widget, new_widget):
     old_widget
