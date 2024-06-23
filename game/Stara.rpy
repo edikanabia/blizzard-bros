@@ -79,6 +79,7 @@ label scene_three:
     scene bg black
     with fade
 
+
     pause 0.7
     play foley door_open
     show bg three with fade
