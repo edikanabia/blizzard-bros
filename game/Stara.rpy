@@ -2,10 +2,13 @@
 label scene_one:
 
     scene black
+    play ambience noise fadein 0.5 volume 0.2
     em "Are you ready? This will hurt for a moment, but the relief will come after."
+    play foley sizzle
     wb "Rrggh—! Khhhh…"
     em "Easy, easy… Again, this is still just warm water, but given your body temperature…"
     em "This will melt the ice formations, but the wounds they were causing will open up when they do."
+    play foley growl
     "The strange werebeast growls lowly. His teeth glint in the light of my lantern. I pay little mind as I continue talking through my work." 
     scene bg one
     with fade
@@ -13,6 +16,7 @@ label scene_one:
     em "which is the opposite of what we want, given we want the healing process to go by as quickly as possible." 
     em "As such, I’ll prepare these dressings to provide some warmth to the areas, amongst other things to promote healing."
     "It’s quick, simple work. I almost find it meditative."
+    play music haunting
     "I hadn’t noticed when he stopped growling at me, but when I do, I notice that he has been watching me as well. With curiosity, caution, or some other underlying emotion, I couldn’t tell."
     "Either way, I pretend that I don’t see him watching me. The moment I move to look up at him, he then quickly looks away—which is just about the reaction I expected." 
     "He doesn’t seem skittish; just guarded. I try to give him a warm smile, though this prompts no reaction."
@@ -48,6 +52,7 @@ label scene_one:
     em "I’ll be retiring for the night. I’ll leave you alone and then check on you in the morning."
     "The werebeast makes no indication that he heard me, but I assume he did anyway."
     em "Have a good night."
+    stop music fadeout 2.0
     "I make my way back up the stairs, and out of the basement. It shouldn’t take long to find a fireplace, or at least I hope so."
     scene bg black
     with dissolve
@@ -60,24 +65,34 @@ label scene_three:
     hide emmett
     scene bg fireplace day
     with fade
+    play ambience noise fadein 0.7 volume 0.2
     "Biting cold is the first thing I feel when I wake up. Unsurprisingly, the fire died down overnight. I rub my face, clearing the bleariness from my eyes. It is only then I see the documents strewn about around me."
     "Not an unfamiliar situation to wake up to, but the location certainly is unique."
     scene bg window snow
     with dissolve
+    play foley wind
     "The blizzard still rages on, I can tell that much from the window. Not much else to discern. I can barely see my van through the haze."
     "I’m still good on supplies for another day or so, so my only hope is that the blizzard subsides by then."
     "For now, I suppose there’s not much else to do besides check on the werebeast. He should be fine, but there’s much I would like to ask him."
     # door creak sfx
-    scene bg three
+    play foley walk
+    scene bg black
     with fade
+
+    pause 0.7
+    play foley door_open
+    show bg three with fade
+    play music falomotif noloop
     em "Good morning. Would you care to join me for breakfast?"
     "The werebeast stirs, and turns to look at me."
+    play foley growl
     wb "You’re persistent."
     em "Ha, you could call it that. You are also the only company I have while I am here."
     wb "Fair enough. I can’t say I’ll be good company."
     em "Good enough for me. Now, breakfast?"
     "We eat breakfast in silence, though it’s not an uncomfortable one."
     "However, once I finish cleaning up, only then does the werebeast speak up."
+    play music meeting
     wb "I did kill all of the other prisoners down here, if that’s what you were wondering."
     "I was taken aback, mostly due to how unprompted the confession was."
     em "I—"
@@ -119,9 +134,11 @@ label scene_three:
     wb "It’s not like I have anywhere else to go, nor do I have any aspirations that are feasible for me."
     wb "I have nothing here. I have less out there."
     "The werebeast pours himself another cup of tea. The thought leaves my mouth faster than I can think on it."
+    stop music fadeout 0.3
     em "Why not come travel with me?"
     "As impulsive as the offer was, it was one I was welcoming of. For the first time during this stay, the Werebeast is astonished, and it takes him a moment to respond."
     wb "What?"
+    play music emmettmotif
     em "I am a traveling doctor. I do have one other person that will soon travel with me, however neither of us would mind an additional companion to join us. We have the means to support an extra occupant or two."
     em "If you wanted a fresh start with no one to judge you, why not in a strange land with some strangers?"
     wb "How...bold."
@@ -129,10 +146,12 @@ label scene_three:
     em "Have I done anything to draw your ire?"
     wb "What if you will? I could leave my past behind, but if youre here, wouldn’t it be important to consider how I could harm you?"
     em "Maybe so. But it has been quite some time. You can take this as an opportunity to be someone beyond their agony and vengence. You could be your own person."
+    stop music fadeout 2.5
     "The werebeast doesn’t respond. He puts down his cup, and I collect it from him."
     em "I’ll give you time to consider the idea. You’re not obligated to choose one way or another, and I would be fine with whatever you decide."
     "I stand up and ascend the stairs."
     em "I will return in the evening to check up on your wounds. My hope is that theyre healing fine."
+    stop ambience fadeout 1.0
     jump scene_four
     return
 
@@ -156,6 +175,7 @@ label scene_final:
     em "Before that, I should prepare breakfast."
     em "Now, where did I put my kettle…"
     # door creak sfx
+    play foley creak
     "The door to the cellar creaks open behind me. I turn to look—"
     show falo:
         xalign 0.75
@@ -168,9 +188,12 @@ label scene_final:
     em "Ah! Thank you. You can keep the blanket, though. You’ll need it more than I do."
     "Werebeast?" "About that…"
     show falo thinking
+    play music imgsongbeat
     "Werebeast?" "I made up my mind. You said you wouldn’t mind an extra traveling companion, right?"
     show falo happy
     "Werebeast?" "I’ll be joining you. I hope you didn’t plan on turning back on your offer."
+    queue music imgsong1
+    queue music imgsong2
     show emmett happy
     em "Of course not. I was hoping you would accept, actually."
     "I prepare breakfast for the both of us, and I thank the heavens once more that the blizzard had subsided—these were the last meal packs I had on hand."
@@ -200,6 +223,7 @@ label scene_final:
     scene bg black
     with dissolve
     "END"
+    stop music fadeout 2.0
     return
 
 # end game

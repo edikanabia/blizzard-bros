@@ -2,15 +2,21 @@
 label scene_two:
     scene bg black
     "Coming back to ground floor, the howling wind persists from outside."
+    play foley wind
     scene bg window snow
     with dissolve
     "Even if I hadn't looked outside, I could tell that the blizzard is still raging on."
     "I doubt it's going to let up within the next day; I'm effectively trapped here until it subsides."
+    stop ambience fadeout 0.7
     "That's what I get for letting curiosity get the better of me. However I did see with my own eyes that this mansion is not completely abandoned."
     scene bg fireplace night
     with fade
+
+    play ambience fireplace fadein 0.2
     "It didn't take me long to find a fireplace I could settle next to for the night, however admittedly, I did get slightly...distracted."
     "No one is around to care if I snooped around, and I doubt the occupant downstairs minds either."
+    play music emmettmotif
+
     "I settle down next to the fireplace, using magic to light up the logs."
     "I start to read over the documents I've gathered around the mansion..."
     show emmett
@@ -29,10 +35,12 @@ label scene_two:
     nvl clear
     journal "Leave now. There was a reason why those who turned were left behind."
     show emmett neutral
+    stop music fadeout 0.3
     em "…They were abandoned?"
     "I look over from across the house, where I can see the door to the basement."
     show emmett pensive
     em "Well, it looks like he has a lot of explaining to do tomorrow."
+    stop ambience fadeout 1.0
     jump scene_three
     return
 
@@ -41,6 +49,7 @@ label scene_four:
     
     scene bg fireplace day
     with fade
+    play ambience fireplace fadein 0.3
     "I must have scraped this mansion from top to bottom, and there are barely any scraps of wood left for kindling."
     show emmett thinking
     em "That's strange… I could have sworn that there would have been more bones laying around based on our talk this morning…"
@@ -51,7 +60,10 @@ label scene_four:
     hide emmett
     scene bg four
     with fade
+    play foley walk
     "I walk back into the basement, with less kindling this time. The Werebeast is staring at the flames with his back to me."
+    play music emmett1 noloop
+    queue music emmett2
     wb "Have you ever taken something back that was stolen from you?"
     em "Well, I did find out that some of my tools were stolen the other day."
     em "But then I realized that whomever took them probably needed them a lot more than I did at that moment."
@@ -78,6 +90,8 @@ label scene_four:
     "I set the firewood down and start to put the tools back in my bag."
     em "I'll let you think about it. Once the blizzard dies down, I'll be leaving. You're welcome to join me."
     "I leave the Werebeast alone in the basement, as the flames reduce to a simmer."
+    stop music fadeout 1.0
+    stop ambience fadeout 0.5
     jump scene_final
     return
 

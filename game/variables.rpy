@@ -180,7 +180,9 @@ image ctc_indicator:
 
 #region Sound
 
-$ renpy.music.register_channel("ambience", "sfx", loop=True, tight=True, buffer_queue=True)
+init python:
+    renpy.music.register_channel("ambience", "sfx", loop=True, tight=True, buffer_queue=True)
+    renpy.music.register_channel("foley","sfx", loop=False)
 
 #region SFX oneshots
 define audio.growl = "audio/sfx/beast_growl.ogg"
@@ -193,6 +195,7 @@ define audio.monster = "audio/sfx/ominous_shuffling.ogg"
 define audio.paper = "audio/sfx/paper.ogg"
 define audio.knock = "audio/sfx/slow_knock.ogg"
 define audio.panic_knock = "audio/sfx/panicked_knock.ogg"
+define audio.sizzle = "audio/sfx/sizzle.ogg"
 
 
 
@@ -207,6 +210,16 @@ define audio.noise = "audio/sfx/ambience_noise.ogg"
 
 
 #region music
+
+define audio.haunting = "audio/bgm/haunting.ogg"
+define audio.meeting ="audio/bgm/meeting.ogg"
+define audio.emmett1 = "audio/bgm/emmett_intro.ogg"
+define audio.emmett2 = "audio/bgm/emmett_loop.ogg"
+define audio.imgsong1 = "audio/bgm/(instr)escape_intro.ogg"
+define audio.imgsong2 = "audio/bgm/(instr)escape_loop.ogg"
+define audio.falomotif = "<from 0.0 to 15.4>audio/bgm/haunting.ogg"
+define audio.emmettmotif = "audio/bgm/emmett_motif.ogg"
+define audio.imgsongbeat = "audio/bgm/escape_beat.ogg"
 
 #endregion music
 
