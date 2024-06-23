@@ -164,28 +164,29 @@ label scene_final:
         xalign 0.25
         yalign 1.0
     "—and I see a haggard individual with overgrown hair and a tattered cloak, threadbare from the stresses of transforming. They hold out my kettle in their bandaged hand, and the heated blanket over their forearm."
-    wb "You forgot these."
+    "Werebeast?" "You forgot these."
     em "Ah! Thank you. You can keep the blanket, though. You’ll need it more than I do."
-    wb "About that…"
+    "Werebeast?" "About that…"
     show falo thinking
-    wb "I made up my mind. You said you wouldn’t mind an extra traveling companion, right?"
-    wb "I’ll be joining you. I hope you didn’t plan on turning back on your offer."
+    "Werebeast?" "I made up my mind. You said you wouldn’t mind an extra traveling companion, right?"
+    show falo happy
+    "Werebeast?" "I’ll be joining you. I hope you didn’t plan on turning back on your offer."
     show emmett happy
     em "Of course not. I was hoping you would accept, actually."
     "I prepare breakfast for the both of us, and I thank the heavens once more that the blizzard had subsided—these were the last meal packs I had on hand."
     show emmett neutral
     em "There’s a shower installed inside the van—you’re free to use it once we clear the van of snow. We’ll then make our way back towards the nearest town, if that’s alright."
     show falo neutral
-    wb "No one will know who I am over there, it’s fine."
-    wb "If you need some extra money, I kept a secret stash in my room. I had it in case I found the chance to escape from this place, so…"
+    "Werebeast?" "No one will know who I am over there, it’s fine."
+    "Werebeast?" "If you need some extra money, I kept a secret stash in my room. I had it in case I found the chance to escape from this place, so…"
     show falo thinking
-    wb "I guess now’s a good time to dip into it."
+    "Werebeast?" "I guess now’s a good time to dip into it."
     show emmett gentle
     em "Well… How about we go to a barbershop once we’re in town? A change in appearance might be refreshing."
     show falo happy
-    wb "I’d like that."
+    "Werebeast?" "I’d like that."
     "He cracks a weary, faint smile."
-    wb "By the way, you never told me your name."
+    "Werebeast?" "By the way, you never told me your name."
     show emmett neutral
     em "Ah, of course. My name is Emmett. You never told me yours, either."
     show falo thinking
