@@ -240,8 +240,16 @@ image falo thinking = "images/flThink.png"
 #backgrounds
 image bg white = Solid("#fff")
 image bg black = Solid("#000")
+image bg fireplace day = "images/BGFireplaceDay.png"
+image bg fireplace night = "images/BGFireplaceNight.png"
+image bg window snow = "images/BGWindowSnow.png"
+image bg window clear = "images/BGWindowClear.png"
 
 #CGs
+image bg one = "images/CG1.png"
+image bg two = "images/CG2.png"
+image bg three = "images/CG3.png"
+image bg four = "images/CG4.png"
 
 #endregion images
 

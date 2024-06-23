@@ -1,13 +1,14 @@
 # opening scene
 label scene_one:
 
-    # screen starts out black here, no emotes are used
+    scene black
     em "Are you ready? This will hurt for a moment, but the relief will come after."
     wb "Rrggh—! Khhhh…"
     em "Easy, easy… Again, this is still just warm water, but given your body temperature…"
     em "This will melt the ice formations, but the wounds they were causing will open up when they do."
     "The strange werebeast growls lowly. His teeth glint in the light of my lantern. I pay little mind as I continue talking through my work." 
-    # CG1 appears here
+    scene bg one
+    with fade
     em "I’ll be dressing the wounds now. Your body temperature means blood will not flow as freely…" 
     em "which is the opposite of what we want, given we want the healing process to go by as quickly as possible." 
     em "As such, I’ll prepare these dressings to provide some warmth to the areas, amongst other things to promote healing."
@@ -24,7 +25,8 @@ label scene_one:
     wb "…Ice cubes, Good Doctor?"
     em "Concentrated soup, it keeps well in this weather. Now, would you like to join me?"
     "I melt down more fresh snow in the kettle. The werebeast seems interested as I use magic to heat it up."
-    # CG2 appears here
+    scene bg two
+    with dissolve
     wb "What are you using as a conduit? Yourself?"
     em "Ah— the gloves, actually. It’s quite the rage these days. The material is like leather, but made to handle the duress of casting magic."
     wb "...Hm."
@@ -47,20 +49,27 @@ label scene_one:
     "The werebeast makes no indication that he heard me, but I assume he did anyway."
     em "Have a good night."
     "I make my way back up the stairs, and out of the basement. It shouldn’t take long to find a fireplace, or at least I hope so."
-    #fade to black transition
+    scene bg black
+    with dissolve
+    jump scene_two
     return
 
 #scene three
 label scene_three:
 
-    #Fireplace Day BG
+    hide emmett
+    scene bg fireplace day
+    with fade
     "Biting cold is the first thing I feel when I wake up. Unsurprisingly, the fire died down overnight. I rub my face, clearing the bleariness from my eyes. It is only then I see the documents strewn about around me."
     "Not an unfamiliar situation to wake up to, but the location certainly is unique."
+    scene bg window snow
+    with dissolve
     "The blizzard still rages on, I can tell that much from the window. Not much else to discern. I can barely see my van through the haze."
     "I’m still good on supplies for another day or so, so my only hope is that the blizzard subsides by then."
     "For now, I suppose there’s not much else to do besides check on the werebeast. He should be fine, but there’s much I would like to ask him."
-    # fade to black for scene transition, door creak sfx
-    # CG3 appears
+    # door creak sfx
+    scene bg three
+    with fade
     em "Good morning. Would you care to join me for breakfast?"
     "The werebeast stirs, and turns to look at me."
     wb "You’re persistent."
@@ -85,7 +94,8 @@ label scene_three:
     em "…"
     em "You were the one to curse all of them, were you?"
     wb "Quick on the uptake. Yes, I was. That’s why I’m like this as well."
-    "Magic lingers from where it is cast. As it goes, it’s wise to use some other object to channel magic through, rather than channeling the magic through one’s own body. A horror story children would be told when they first start learning magic is when a man died from essentially cooking himself alive from frequently using fire magic from his hands and mouth."
+    "Magic lingers from where it is cast. As it goes, it’s wise to use some other object to channel magic through, rather than channeling the magic through one’s own body." 
+    "A horror story children would be told when they first start learning magic is when a man died from essentially cooking himself alive from frequently using fire magic from his hands and mouth."
     "This would explain the cocktail nature of the werebeast’s curse, and why the conditions of how it works are not so clear-cut. The lingering magic from cursing every person eventually built up to be its own fully fledged curse, rather than be some minor inconvenience."
     em "Why didn’t you use a conduit? You don’t seem the type to use magic in such a risky way without reason."
     wb "You know that it’s easy to trace magic from its source. Much like the ballistics of a gun."
@@ -123,42 +133,65 @@ label scene_three:
     em "I’ll give you time to consider the idea. You’re not obligated to choose one way or another, and I would be fine with whatever you decide."
     "I stand up and ascend the stairs."
     em "I will return in the evening to check up on your wounds. My hope is that theyre healing fine."
+    jump scene_four
     return
 
 # final scene
 label scene_final:
 
-    # fireplace day bg
+    scene bg fireplace day
+    with fade
     "Morning rises once more, and blessedly, I still haven’t succumbed to the cold. Better yet…"
+    show emmett gentle
     em "…It’s quiet."
     "Indeed, the fireplace is reduced to dying embers. The house no longer groans against the force of the wind. In fact, there is no howling wind at all."
-    # Clear window BG
+    hide emmett
+    scene bg window clear
+    with dissolve
     "A look out the window ties it all together."
     "With the blizzard gone, my van is in clear view. A little buried, but nothing a little menial labor and fire magic couldn’t fix."
-    # transition back to fireplace day bg
+    scene bg fireplace day
+    with dissolve
+    show emmett thinking
     em "Before that, I should prepare breakfast."
     em "Now, where did I put my kettle…"
     # door creak sfx
     "The door to the cellar creaks open behind me. I turn to look—"
+    show falo:
+        xalign 0.75
+        yalign 1.0
+    show emmett:
+        xalign 0.25
+        yalign 1.0
     "—and I see a haggard individual with overgrown hair and a tattered cloak, threadbare from the stresses of transforming. They hold out my kettle in their bandaged hand, and the heated blanket over their forearm."
     wb "You forgot these."
     em "Ah! Thank you. You can keep the blanket, though. You’ll need it more than I do."
     wb "About that…"
+    show falo thinking
     wb "I made up my mind. You said you wouldn’t mind an extra traveling companion, right?"
     wb "I’ll be joining you. I hope you didn’t plan on turning back on your offer."
+    show emmett happy
     em "Of course not. I was hoping you would accept, actually."
     "I prepare breakfast for the both of us, and I thank the heavens once more that the blizzard had subsided—these were the last meal packs I had on hand."
+    show emmett neutral
     em "There’s a shower installed inside the van—you’re free to use it once we clear the van of snow. We’ll then make our way back towards the nearest town, if that’s alright."
+    show falo neutral
     wb "No one will know who I am over there, it’s fine."
     wb "If you need some extra money, I kept a secret stash in my room. I had it in case I found the chance to escape from this place, so…"
+    show falo thinking
     wb "I guess now’s a good time to dip into it."
+    show emmett gentle
     em "Well… How about we go to a barbershop once we’re in town? A change in appearance might be refreshing."
+    show falo happy
     wb "I’d like that."
     "He cracks a weary, faint smile."
     wb "By the way, you never told me your name."
+    show emmett neutral
     em "Ah, of course. My name is Emmett. You never told me yours, either."
+    show falo thinking
     fl "Falo."
     fl "I always liked the name, so you can call me that."
+    show emmett happy
     em "Well met, Falo."
     em "Now, would you like to join me for breakfast?"
     return
