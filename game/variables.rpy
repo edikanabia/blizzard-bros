@@ -138,8 +138,8 @@ transform move_to_left_edge:
 transform move_to_person_a:
     linear 0.8 person_a
 
-transform move_to_person_b:
-    linear 0.8 person_b
+transform move_to_person_b(speed=0.5):
+    linear speed person_b
 
 transform move_to_person_c:
     linear 0.8 person_c
@@ -231,6 +231,7 @@ define audio.imgsongbeat = "audio/bgm/escape_beat.ogg"
 define em = Character("Emmett", image="emmett", ctc="ctc_indicator", ctc_position="fixed", callback=beep_voice)
 define wb = Character("Werebeast", ctc="ctc_indicator", ctc_position="fixed", callback=beep_voice)
 define fl = Character("Falo", image="falo", ctc="ctc_indicator", ctc_position="fixed", callback=beep_voice)
+define fl_un = Character("Werebeast?", image="falo", ctc="ctc_indicator", ctc_position="fixed", callback=beep_voice)
 define narrator = Character(what_font="LibreBaskerville-Italic.ttf", what_color="#f3d491", ctc="ctc_indicator", ctc_position="fixed", callback=beep_voice) 
 define journal = Character(kind=nvl_narrator, what_color="#362c1f", what_outlines=[(0, None, 0, 0)], what_font="fonts/blzee.ttf")
 
